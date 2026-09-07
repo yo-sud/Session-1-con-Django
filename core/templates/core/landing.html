@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 01 - Django</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Segoe UI", system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 560px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .badge {
+            display: inline-block;
+            background: #4aa3df;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            margin-bottom: 1.2rem;
+        }
+        h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
+        p { color: #c7d5e0; line-height: 1.6; margin-bottom: 1.5rem; }
+        a.button {
+            display: inline-block;
+            background: #fff;
+            color: #0f2027;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.75rem 1.8rem;
+            border-radius: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        a.button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
+        footer { margin-top: 1.8rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.55); }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Django 6.1</span>
+        <h1>Bienvenido a Sesión 01</h1>
+        <p>Tu primer proyecto Django esta corriendo. Esta es una landing page de ejemplo con app "core", entorno virtual y servidor de desarrollo activo.</p>
+        <a class="button" href="/admin/">Ir al Admin</a>
+        <footer>Entorno virtual: <strong>venv</strong> &middot; Puerto 8000</footer>
+    </div>
+</body>
+</html>
